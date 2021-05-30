@@ -24,7 +24,7 @@ num_1=3
 #第二层神经元个数
 num_2=np.shape(y)[1]
 
-batch_size=10
+batch_size=1
 le_rate=1e-6
 
 
@@ -37,6 +37,7 @@ W2=np.random.randn(num_1,num_2)
 for i in range(1000):
     #forward
     randomList=list(range(num_data))
+    
     random.shuffle(randomList)
     select_list=randomList[0:batch_size]
     #batch_x
