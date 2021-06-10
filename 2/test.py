@@ -92,3 +92,7 @@ print(c,c.shape)
 d=torch.squeeze(x)
 print(d,d.shape)
 
+
+#%%
+import torch
+print(torch.__version__)
