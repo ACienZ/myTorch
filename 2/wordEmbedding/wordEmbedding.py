@@ -57,7 +57,7 @@ def word_tokenize(text):
 #读取文件
 # file_path = os.path.abspath(__file__)
 # file_path = os.path.dirname(file_path)
-# with open(os.path.join(file_path,'../text8/text8.train.txt'),'r') as fi:
+# with open(os.path.join(file_path,r'\text8\text8.train.txt'),'r') as fi: #for windows
 with open('text8.train.txt','r') as fi:
     text=fi.read()
     
