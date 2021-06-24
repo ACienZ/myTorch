@@ -13,3 +13,19 @@ elif sys_type=='linux':
 with open(path,'r') as fi:
     text=fi.read()
 print(text)
+
+#%%
+import numpy as np
+print(*[1,2,3])
+print(*(1,2,3))
+a=np.multiply(*(1,2))
+print(a)
+b=np.multiply(*(1,2,3)) #错误
+# %%
+import torch
+loss_fn=torch.nn.CrossEntropyLoss()
+loss=loss_fn(torch.Tensor([[0.5]]),torch.LongTensor([0.5]))
+print(loss.item())
+# %%
+torch.randint(50002, (1, 1), dtype=torch.long)
+# %%
